@@ -34,3 +34,11 @@ Install or copy `kit/` into a Unity project and point the AI assistant at
 `kit/AGENTS.md`.
 
 The assistant should load only the files needed for the task.
+
+## Session Loading
+
+Do not reload kit files repeatedly in the same AI session.
+
+At session start, load `kit/AGENTS.md` once. After that, reuse already loaded
+agent, rule, and skill context unless the task scope changes, the user says the
+kit changed, or a new file is required.

@@ -60,6 +60,34 @@ For small, low-risk additions:
 | Player-facing horror beat | `rules/steam-horror-design.md` |
 | Keyboard, mouse, pause, or build concern | `rules/pc-input-build.md` |
 
+## Session Loading Policy
+
+At the start of a session, read this file once.
+
+For each task:
+
+- Reuse agent, rule, and skill files already loaded earlier in the same session.
+- Do not reload the same kit file repeatedly.
+- Read a new kit file only when the task needs a different role, rule, or skill.
+- Re-read a kit file when the user says the kit changed or when the file may
+  have changed.
+- For small follow-up tasks, continue from already loaded context.
+- If a file was already read, summarize from the existing session context
+  instead of reading the file again.
+
+Keep a short loaded-context note while working:
+
+```text
+Loaded:
+- AGENTS: yes/no
+- agents:
+- rules:
+- skills:
+```
+
+If the loaded context is not enough to answer safely, load only the missing
+specific file.
+
 ## UHFPS Skill Routing
 
 | Work area | Skill |
