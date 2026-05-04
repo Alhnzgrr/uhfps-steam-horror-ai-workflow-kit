@@ -71,6 +71,11 @@ For small, low-risk additions:
 | Objectives and progression prompts | `skills/uhfps/objectives/SKILL.md` |
 | Save/load and runtime spawned objects | `skills/uhfps/save-load/SKILL.md` |
 | Game Manager modules and UI references | `skills/uhfps/game-manager/SKILL.md` |
+| Jumpscares and fear effects | `skills/uhfps/jumpscares/SKILL.md` |
+| Timeline/camera cutscenes | `skills/uhfps/cutscenes/SKILL.md` |
+| Examine/pointer puzzles | `skills/uhfps/puzzles/SKILL.md` |
+| Camera and item motion effects | `skills/uhfps/motion-controller/SKILL.md` |
+| Hiding spots and pursuit safety | `skills/uhfps/hiding/SKILL.md` |
 
 ## Non-Negotiable Behavior
 
